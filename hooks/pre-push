@@ -1,0 +1,27 @@
+#!/bin/bash
+echo -- inicio pre-push
+
+cd "C:\Users\optiva\Documents\zwamp-x64-2.2.1\vdrive\web\jsDocGrunt"
+grunt concatMinifyDoc
+
+cd "C:\Users\optiva\Documents\zwamp-x64-2.2.1\vdrive\web\concatMinifyDoc"
+
+#echo -- antes git add
+git add *
+#echo -- antes git commit
+git commit -m "Se guardan los cambios de documentacion y prod"
+
+
+
+ejecucionSalida=$?
+
+if [ $ejecucionSalida -ne 0 ]
+then
+	echo -- No se ha podido crear la documentacion.
+	exit 1
+fi
+
+echo -- Fin pre-push
+exit 0
+
+

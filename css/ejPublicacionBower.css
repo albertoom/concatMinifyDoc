@@ -1,0 +1,47 @@
+#campos {
+	width: 25%;
+	margin: auto;
+	padding: 2%;
+	background-color: aqua;
+}
+
+#tituloGral {
+	margin-top: 5%;
+}
+
+#campos p {
+	margin-bottom: 20%;
+	text-align: center;
+}
+
+.noPulsado {
+	color: blue;
+}
+
+.pulsado {
+	color: red;
+}
+
+#pulsame input[type=button] {
+	width: 100px;
+	height: 50px;
+	text-align: center;
+	font-size: 24px;
+	border: 2px solid red;
+	cursor: pointer;
+}
+
+#pulsame {
+	text-align: center;
+}
+
+#img {
+	margin-top: 5%;
+}
+
+#img img {
+	width: 100px;
+	height: auto;
+	display: block;
+	margin: auto;
+}
