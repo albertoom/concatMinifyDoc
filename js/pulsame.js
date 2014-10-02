@@ -4,5 +4,5 @@
  *@see inicAplicacion.js
  **/
 function cambiaColor() {
-	$("#hola").css("color", "red");
+	$("#hola").css("color", "blue");
 }
